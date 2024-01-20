@@ -21,6 +21,8 @@ class VisibilityContextProvider extends Component {
     dashboardFrmShow:false,
     profileFrmShow:false,
     contractFrmShow:false,
+    tasksFrmShow:false,
+    ticketsFrmShow:false,
     blogShow:true,
     whatsAppFrmShow:false,
     linkedinKey:false,
@@ -211,7 +213,14 @@ class VisibilityContextProvider extends Component {
       this.setState({ contractFrmShow: true}) ;
       this.setState({ dashboardFrmShow: true}) ;
     }    
-
+    setTasksFrmShow = () =>{
+      this.setState({ tasksFrmShow: true}) ;
+      this.setState({ dashboardFrmShow: true}) ;
+    }    
+    setTicketsFrmShow = () =>{
+      this.setState({ ticketsFrmShow: true}) ;
+      this.setState({ dashboardFrmShow: true}) ;
+    }    
     setBlogShow=()=>{
      this.setState({ blogShow: true}) ;
     }
@@ -237,7 +246,8 @@ class VisibilityContextProvider extends Component {
           setOnLineChatLoginFrmShow:this.setOnLineChatLoginFrmShow, setChangePassFrmShow:this.setChangePassFrmShow,
           setDashboardFrmShow:this.setDashboardFrmShow, setBlogShow:this.setBlogShow, setProfileFrmShow:this.setProfileFrmShow
           , setContractFrmShow:this.setContractFrmShow, setWhatsAppFrmShow:this.setWhatsAppFrmShow, setOffWhatsAppFrmShow:this.setOffWhatsAppFrmShow,
-          setOffLinkedin:this.setOfflinkedin, setOnLinkedin:this.setOnLinkedin,
+          setOffLinkedin:this.setOffLinkedin, setOnLinkedin:this.setOnLinkedin, setTasksFrmShow:this.setTasksFrmShow, 
+          setTicketsFrmShow:this.setTicketsFrmShow
         }}>
 
           {this.props.children}

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import {  useHistory} from 'react-router-dom';
 ///import WhatsAppWidget from 'react-whatsapp-widget';
 ///import 'react-whatsapp-widget/dist/index.css';
@@ -23,9 +23,17 @@ const WhatsApp = () => {
     setFormsHide(); 
   }
 
+  const handleFrmLoad = () =>{
+    return setOffMenu;
+  }
+  
+  useEffect(() => {
+    handleFrmLoad();
+  }, []);
+
 
   return (
-    <div className={whatsAppFrmShow ? styles.modal : styles.inactive} onLoad={setOffMenu} style={{ backgroundImage: `url(${img})` }}>
+    <div className={whatsAppFrmShow ? styles.modal : styles.inactive}  style={{ backgroundImage: `url(${img})` }}>
        <div className={styles.container}>
       <span id={styles.closeBtn} onClick={handleFrmClose} className={styles.closeBtn}  >
         <svg id={styles.svg}>

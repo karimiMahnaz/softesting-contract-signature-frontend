@@ -12,15 +12,15 @@ class RightSideBar extends Component {
     }
 
     handleClick = (event) => {
-        this.setState({
-            setLoading: event.target.value
-        })
+        // this.setState({
+        //     setLoading: event.target.value
+        // })
     }
 
     handleUserIdChange = (event) => {
-        this.setState({
-            userId: event.target.value
-        })
+        // this.setState({
+        //     userId: event.target.value
+        // })
     }
 
 

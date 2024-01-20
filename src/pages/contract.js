@@ -313,7 +313,7 @@ const Contract = () => {
       />
       <span id={styles.sendEmailLabel}>Send Email</span>
 
-     
+     <div  className={styles.signDate}>
       <Controller
         control={control}
         name="signDate"
@@ -335,7 +335,7 @@ const Contract = () => {
           />
         )}
       />
-
+     </div>
       {errors.contractName && (
         <p id={styles.cError} role="alert">
           {errors.contractName.message}

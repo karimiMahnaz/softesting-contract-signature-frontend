@@ -150,7 +150,7 @@ span {
    
 	  color: $backColor;
     margin-top: 40px;
-    margin-left: 200px; 
+    margin-left: 190px; 
     text-decoration: none;
     position:absolute;
     font-family:  sans-serif;
@@ -160,7 +160,7 @@ span {
    
 	  color: $backColor;
     margin-top: 40px;
-    margin-left: 400px; 
+    margin-left: 375px; 
     text-decoration: none;
     position:absolute;
     font-family:  sans-serif;
@@ -170,7 +170,7 @@ span {
     #link3 {
       color: $backColor;
       margin-top: 40px;
-      margin-left: 600px; 
+      margin-left: 560px; 
       text-decoration: none;
       position:absolute;
       font-family: sans-serif;
@@ -179,18 +179,26 @@ span {
       #link4 {
         color: $backColor;
         margin-top: 40px;
-        margin-left: 800px; 
+        margin-left: 750px; 
         text-decoration: none;
         position:absolute;
         font-family: sans-serif;
         
         }
 
-      
+        #link5 {
+          color: $backColor;
+          margin-top: 40px;
+          margin-left: 860px; 
+          text-decoration: none;
+          position:absolute;
+          font-family: sans-serif;
+          
+          }
 
 .active {
 	opacity: 1;
-	margin-right: 30px;
+	margin-right: 10px;
   display:block;
 }
 .inactive{
@@ -472,7 +480,15 @@ position:absolute;
           
           }
   
-        
+          #link5 {
+            color: $backColor;
+            margin-top: 40px;
+            margin-left: 840px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            
+            }
   
   .active {
     opacity: 1;
@@ -794,7 +810,14 @@ position:absolute;
           font-family: sans-serif;
           }
   
-        
+          #link5 {
+            color: $backColor;
+            margin-top: 200px;
+            margin-left: 10px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            }
   
   .active {
     opacity: 1;
@@ -1116,7 +1139,15 @@ position:absolute;
           position:absolute;
           font-family: sans-serif;
           }
-  
+
+          #link5 {
+            color: $backColor;
+            margin-top: 200px;
+            margin-left: 10px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            }
         
   
   .active {

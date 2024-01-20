@@ -28,6 +28,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Desktop, Tablet, Mobile, MobileX } from '../contexts/breakPoints';
 import iconUp from '../assets/Icon/Arrow/394261031540882610.svg'
 import iconDown from '../assets/Icon/Arrow/19299514501540882611.svg'
+import Downloads from '../pages/downloads';
 
 const NavBar = () => {
 
@@ -179,6 +180,9 @@ const NavBar = () => {
             <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
               <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
             </ul>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link5} target="_blank" to="/downloads" onClick={setContactFrmShow} >Downloads</Link>
+            </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/changePassword" >changePassword</Link> */}
 
@@ -191,7 +195,7 @@ const NavBar = () => {
               <Route path="/contactJ" exact>
                   {contactFrmShow ? <ContactUs src="Join our team" /> : null}
               </Route>
-
+             
               {/* <Route path="/signup" exact>
                 <SignUp />
               </Route> */}
@@ -292,6 +296,9 @@ const NavBar = () => {
             <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
               <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
             </ul>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link5} target="_blank" to="/downloads" onClick={setContactFrmShow}   >Downloads</Link>
+            </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}
 
@@ -391,6 +398,9 @@ const NavBar = () => {
               <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
                 <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
               </ul>
+              <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+                <Link id={styles.link5} target="_blank" to="/downloads" onClick={setContactFrmShow}   >Downloads</Link>
+              </ul>
               {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
               {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}
 
@@ -487,8 +497,9 @@ const NavBar = () => {
             <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
               <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow}   >Let&apos;s discuss your project</Link>
             </ul>
+            
             <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
-              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
+              <Link id={styles.link5} target="_blank" to="/downloads" onClick={setContactFrmShow}   >Downloads</Link>
             </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}

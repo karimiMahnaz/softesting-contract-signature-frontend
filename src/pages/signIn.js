@@ -117,17 +117,17 @@ const SignIn = (props) => {
   let urlCookie = "";
   let urlSignIn = "";
 
-  if (location === "localhost") {
-    urlReCaptcha = `http://${location}:8000/api/user/reCaptcha`;
-    urlSignIn = `http://${location}:8000/api/user/signIn`;
-    urlGoogle = `http://${location}:8000/auth/google`;
-    urlCookie = `http://${location}:8000/setCookie`;
-  } else {
+  // if (location === "localhost") {
+  //   urlReCaptcha = `http://${location}:8000/api/user/reCaptcha`;
+  //   urlSignIn = `http://${location}:8000/api/user/signIn`;
+  //   urlGoogle = `http://${location}:8000/auth/google`;
+  //   urlCookie = `http://${location}:8000/setCookie`;
+  // } else {
     urlReCaptcha = "https://api.softestingca.com/api/user/reCaptcha";
     urlSignIn = `https://api.softestingca.com/api/user/signIn`;
     urlGoogle = "https://api.softestingca.com/auth/google";
     urlCookie = "https://api.softestingca.com/setCookie";
-  }
+ // }
 
   const handleSuccess = (data) => {
     console.log('success',data.code);
@@ -401,10 +401,17 @@ try{
   }
   };
 
+  const handleFrmLoad = () =>{
+    return setOffMenu;
+  }
+  
+  useEffect(() => {
+    handleFrmLoad();
+  }, []);
+
   return (
     <form
       className={loginFrmShow ? styles.modal : styles.inactive}
-      onLoad={setOffMenu}
       onSubmit={handleSubmit(onSubmit)}
       style={{ backgroundImage: `url(${img})` }}
     >

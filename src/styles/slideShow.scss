@@ -9,8 +9,8 @@ $buttonColor:#0d6efd;
      }
 
      section.slideshow section.current-slide{
-        width: 95%;
-        height: 550px;
+        width: 90%;
+        height: 55vh;
         margin: auto 10px;
       
     }
@@ -19,13 +19,13 @@ $buttonColor:#0d6efd;
 @media only screen and  (max-width: 500px){
 
     section.slideshow{
-        width: 100%;
+        width: 90%;
         left:0;
     }
 
     section.slideshow section.current-slide{
         width: 90%;
-        height: 550px;
+        height: 55vh;
         margin: auto 10px;
       
     }

@@ -15,7 +15,7 @@ import { AuthContext } from "../contexts/authContext";
 import { NavContext } from "../contexts/navContext";
 import img from "../assets/abstract-blue.jpg";
 
-<title>SofTesting | Signature</title>;
+// <title>SofTesting | Signature</title>;
 
 const Signature = () => {
   const {
@@ -207,22 +207,25 @@ const Signature = () => {
       });
     }
       toast.success("signature is registered.", { theme: "colored" });
-    } catch {
-      (ex) => {
+    } catch (ex) {
         console.log(ex);
         setIsSign(false);
         toast.error("Failed.", { theme: "dark" });
-      };
-    }
+      }
+    
     setStatusSubmit("Submit");
   };
   
+  
+  useEffect(() => {
+    handleFrmLoad();
+  }, []);
+
   return (
     <>
       <Desktop>
         <form
           className={styles.modal}
-          onLoad={handleFrmLoad}
           onMouseEnter={setOffMenu}
           onSubmit={handleSubmit(onSubmit)}
           style={{ backgroundImage: `url(${img})` }}
@@ -361,7 +364,6 @@ const Signature = () => {
       <Tablet>
       <form
           className={styles.modal}
-          onLoad={handleFrmLoad}
           onMouseEnter={setOffMenu}
           onSubmit={handleSubmit(onSubmit)}
           style={{ backgroundImage: `url(${img})` }}
@@ -496,7 +498,6 @@ const Signature = () => {
       <Mobile>
       <form
           className={styles.modal}
-          onLoad={handleFrmLoad}
           onMouseEnter={setOffMenu}
           onSubmit={handleSubmit(onSubmit)}
           style={{ backgroundImage: `url(${img})` }}
@@ -631,7 +632,6 @@ const Signature = () => {
       <MobileX>
       <form
           className={styles.modal}
-          onLoad={handleFrmLoad}
           onMouseEnter={setOffMenu}
           onSubmit={handleSubmit(onSubmit)}
           style={{ backgroundImage: `url(${img})` }}

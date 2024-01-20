@@ -70,7 +70,8 @@ function Messages({ socket }) {
 
   return (
 
-    <div className={styles.message_list} scrollableGrid={true} >
+    <div className={styles.message_list} > 
+     {/*  scrollableGrid={true} > */}
        {/* <div className= {styles.endMessage} name="myScrollToElement" ref ={scrollableGrid}/> */}
       {[...Object.values(messages)]
         .sort((a, b) => a.time - b.time)

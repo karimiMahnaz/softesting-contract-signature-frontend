@@ -1,0 +1,260 @@
+@import './variables.module.scss';
+ 
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+.inActive{display:none;}
+
+
+    .acticle{
+      margin: 0 auto;
+      width:100vw;
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      justify-items: stretch;
+      align-items: stretch;
+      place-items: center;
+      justify-content: center;
+      position:relative;
+      padding:0px;
+      background-color:$backColor;
+      float:center;
+    // align-items: center;
+      overflow:  hidden;
+      scrollbar-width: none;
+      margin-bottom: 0;
+        
+    }
+    
+      
+      .article1{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top:150px;
+        display:grid;
+        grid-template-columns: subgrid;
+        grid-column: 1;
+        position: relative;
+        h1{
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 300;
+          margin-bottom: 10px;
+          font-size: 3.2rem;
+        }
+        h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 200;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+       
+          }
+        .text1 {
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.3rem;
+            display: inline-block;
+           
+        }
+      
+        .line1{
+          display: inline-block;
+          margin-bottom: 50px;
+        }
+
+       .policy{ 
+         font-size: 1.3rem;
+         display: inline-block;
+         &:hover{color:$buttonColor;}
+       }
+      
+     }
+
+     .grid0{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items: stretch;
+      align-content: center;
+      margin-bottom: 100px;
+      row-gap: 8px;
+      column-gap: 150px;
+      place-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+     
+      
+     }
+
+     .osIcons{
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      text-decoration: none;
+      margin-top: 100px;
+      margin-bottom: 400px;
+      &:hover{
+        color:red;
+        border: 2px solid red;
+        border-radius: 10px;
+      }
+      .img{
+        align-items: center;
+        align-content: center;
+      }
+      .tag{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: medium;
+        text-decoration: none;
+        &:hover{
+          color:red;}
+      }
+     }
+
+     .introduce{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items: stretch;
+      align-content: center;
+      margin-bottom: 100px;
+      row-gap: 100px;
+      column-gap: 150px;
+      place-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      img{
+            margin-bottom: 10px;
+            font-size: 2rem; 
+            margin-bottom: 300px;
+      }
+
+      p  {
+        background: -webkit-linear-gradient($fontColor, $gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;   
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        max-width: 400px;
+        max-height: 400px;
+        font-family: sans-serif;
+        margin-bottom: 300px;
+    }
+    a {
+      font-size: 1.3rem;  
+      color:$buttonColor;
+    
+  }
+     }
+
+
+     .six {
+      position: absolute;
+      top:3000px;
+      width: 100vw;
+      height: 600px;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-color: $gradiant;
+      display:grid;
+      grid-template-columns: subgrid;
+      grid-column: 1;
+      align-items: center;
+      align-content: center;
+  }
+  
+  .footer{
+    position: absolute;
+    top:3600px;
+    width: 100%;
+    height: 500px;
+    display:grid;
+    grid-template-columns: subgrid;
+    grid-column: 1;
+  }
+////}
+
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+
+  .six{
+    margin-top:8200px;
+  }
+  .footer{
+    top:8900px;
+    z-index:20;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  .article1{
+    margin-top:400px
+  }
+  .section1{
+    margin-top:1700px;
+  }
+  .six{
+    margin-top:9000px;
+  }
+  .footer{
+    top:9700px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    height: 800px;
+  }
+}
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+  .article1{
+    margin-top:400px
+  }
+  .section1{
+    margin-top:1800px;
+  }
+
+  .six{
+    margin-top:14000px;
+  }
+  .footer{
+    top:14750px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    height: 800px;
+  }
+}

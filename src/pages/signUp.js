@@ -98,8 +98,9 @@ const SignUp = () => {
 
   const handleSignIn = () => {
     setLoginFrmShow();
-   <Redirect push to="/signin" />;
+ 
    history.push("/signin");
+   return <Redirect push to="/signin" />;
   };
 
   const handlePolicy = () => {
@@ -1274,3 +1275,8 @@ const SignUp = () => {
 };
 
 export default withRouter(SignUp);
+
+
+
+
+

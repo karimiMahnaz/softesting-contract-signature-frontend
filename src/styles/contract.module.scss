@@ -143,17 +143,19 @@
         font-family:  sans-serif;
        }
 
-
-       #signDate{
+    .signDate{
         top:290px;
-        left:10%;
-        width: 48%;
-        height: 30px;
         position:absolute;
+        margin-left:10%;
+        z-index: 40;
+       #signDate{
+        height: 30px;
         font-size: 0.9rem;
         font-family:  sans-serif;
         border-radius: 5px;
     }
+  }
+  
     #sError{
       height: 20px;
       width: 5px;
@@ -333,17 +335,18 @@
         font-family:  sans-serif;
        }
 
-       #signDate{
-        top:290px;
-        left:10%;
-        width: 60%;
-        height: 30px;
-        position:absolute;
-        font-size: 0.9rem;
-        font-family:  sans-serif;
-        border-radius: 5px;
-    }
-
+    .signDate{
+      top:290px;
+      position:absolute;
+      margin-left:10%;
+      z-index: 40;
+     #signDate{
+      height: 30px;
+      font-size: 0.9rem;
+      font-family:  sans-serif;
+      border-radius: 5px;
+  }
+}
     #sError{
       height: 20px;
       width: 5px;
@@ -523,16 +526,18 @@
         font-family:  sans-serif;
        }
 
-       #signDate{
-        top:310px;
-        left:10%;
-        width: 70%;
-        height: 30px;
-        position:absolute;
-        font-size: 0.9rem;
-        font-family: sans-serif;
-        border-radius: 5px;
-    }
+    .signDate{
+      top:310px;
+      position:absolute;
+      margin-left:10%;
+      z-index: 40;
+     #signDate{
+      height: 30px;
+      font-size: 0.9rem;
+      font-family:  sans-serif;
+      border-radius: 5px;
+  }
+}
     #sError{
       height: 20px;
       width: 5px;
@@ -712,17 +717,20 @@
         font-family:  sans-serif;
        }
 
-       #signDate{
-        top:300px;
-        left:10%;
-        width: 70%;
-        height: 30px;
-        position:absolute;
-        font-size: 0.9rem;
-        font-family:  sans-serif;
-        border-radius: 5px;
-    }
-   
+     
+    .signDate{
+      top: 300px;;
+      position:absolute;
+      margin-left:10%;
+      z-index: 40;
+     #signDate{
+      height: 30px;
+      font-size: 0.9rem;
+      font-family:  sans-serif;
+      border-radius: 5px;
+  }
+}
+
     #sError{
       height: 20px;
       width: 5px;

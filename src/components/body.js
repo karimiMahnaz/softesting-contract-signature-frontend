@@ -282,7 +282,7 @@ const handleBlogShow=()=>{
 
           <div className={styles.card}>
             <div className ={styles.cardHeader}>
-               <img src={icon11} img = "development"/> 
+               <img src={icon11} alt = "development"/> 
               <h6>Full control over development</h6>
             </div>
 

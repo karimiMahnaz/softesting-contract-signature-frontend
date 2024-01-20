@@ -11,7 +11,7 @@ import styles from "../styles/documentSign.module.scss";
 import { NavContext } from "../contexts/navContext";
 import img from "../assets/abstract-blue.jpg";
 
-<title>SofTesting | To Sign Contract</title>;
+// <title>SofTesting | To Sign Contract</title>;
 
 const DocumentSign = (params) => {
     

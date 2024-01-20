@@ -1,0 +1,683 @@
+
+@import "./variables.module.scss";
+
+
+#emailAd:hover{color:$buttonColor;}
+
+.inactive{display:none;}
+.errorBorder{ border: 1px solid rgba(214, 9, 9, 0.8); }
+.Border{ border: 1px solid rgba(9, 228, 93, 0.8); }
+
+.fontLink {
+  font-family:  sans-serif;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .container{
+        position:fixed;
+        left: 8.1vw;
+        top: 0;
+        padding:0 5px;
+        background-color:$black;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        width: 91.9vw;
+        z-index: 30;
+        height:100vh;
+        font-size: 14px;
+        font-family:  sans-serif;
+    }
+
+    #email{
+        height: 30px;
+        width: 48%;
+        top:100px;
+        left:8%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       }
+       #eError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:100px;
+        left:6%;
+        position:absolute;
+      }
+
+       #ticket{
+        top:140px;
+        left:8%;
+        width: 48%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        color:white;
+    }
+
+    #ticket::-webkit-input-placeholder {color:white;} /* Chrome/Opera/Safari */
+    #ticket::-moz-placeholder { color: white;} /* Firefox 19+ */
+    #ticket:-ms-input-placeholder { color: white;} /* IE 10+ */
+    #ticket:-moz-placeholder {color: white;}  /* Firefox 18- */
+
+    #nTicket{
+      top:140px;
+      left:8%;
+      width: 48%;
+      position:absolute;
+      font-size: 0.9rem;
+      font-family:  sans-serif;
+      border-radius: 5px;
+  }
+    #editor{
+        top:290px;
+        left:8%;
+        width: 48%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+    
+   
+    #submit{
+        height: 40px;
+        width: 100px;
+        top:50px;
+        left:55vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+      }
+      #newTicket{
+        height: 40px;
+        width: 100px;
+        top:90px;
+        left:55vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+      }
+       #sendEmail{
+        height: 20px;
+        width: 20px;
+        top:180px;
+        left:55vw;
+        position:absolute;
+       }
+
+       #sendEmailLabel{
+        height: 30px;
+        width: 180px;
+        top:185px;
+        left:58vw;
+        position:absolute;
+        font-size: 1rem;
+        color:$white;
+      //  padding:2px 0;
+        text-align: left;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+       }
+
+   
+   
+   .table{
+         width: 80%;
+         left:8%;
+         top:450px;
+         background-color:whitesmoke;
+         color:black;
+         position:absolute;
+         z-index: 31;  
+        }
+
+        .header{
+            background-color: $buttonColor;
+            height:40px;
+            font-size: .8rem;
+            font-family:  sans-serif;
+            color:$white;
+            padding:0;
+            margin:0;
+         }
+         .head1{
+            width: 50px;
+       
+         }
+        .tbody{
+            padding:10px;
+            padding-left:30px;
+            align-content:space-between;
+        }
+         .rowIsSigned{
+            margin-Top:'10px';
+            padding:10px;
+            font-size: 0.9rem;
+            font-family:  sans-serif;
+            color:$buttonColor
+         }
+         .rowIsnotSigned{
+            margin-Top:'10px';
+            padding:10px;
+            font-size: 0.9rem;
+            font-family:  sans-serif;
+            color:red;
+         }
+
+}
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+  .container{
+    position:fixed;
+    left: 8.1vw;
+    top: 0;
+    padding:0 5px;
+    background-color:$black;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    width: 91.9vw;
+    z-index: 30;
+    height:100vh;
+    font-size: 14px;
+    font-family:  sans-serif;
+}
+
+#email{
+    height: 30px;
+    width: 48%;
+    top:100px;
+    left:8%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+   }
+   #eError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:100px;
+    left:6%;
+    position:absolute;
+  }
+
+   #ticket{
+    top:140px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+    color:white;
+}
+
+#ticket::-webkit-input-placeholder {color:white;} /* Chrome/Opera/Safari */
+#ticket::-moz-placeholder { color: white;} /* Firefox 19+ */
+#ticket:-ms-input-placeholder { color: white;} /* IE 10+ */
+#ticket:-moz-placeholder {color: white;}  /* Firefox 18- */
+
+#nTicket{
+  top:140px;
+  left:8%;
+  width: 48%;
+  position:absolute;
+  font-size: 0.9rem;
+  font-family:  sans-serif;
+  border-radius: 5px;
+}
+#editor{
+    top:290px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+}
+
+
+#submit{
+    height: 40px;
+    width: 100px;
+    top:50px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+  #newTicket{
+    height: 40px;
+    width: 100px;
+    top:90px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+   #sendEmail{
+    height: 20px;
+    width: 20px;
+    top:180px;
+    left:55vw;
+    position:absolute;
+   }
+
+   #sendEmailLabel{
+    height: 30px;
+    width: 180px;
+    top:185px;
+    left:58vw;
+    position:absolute;
+    font-size: 1rem;
+    color:$white;
+  //  padding:2px 0;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+   }
+
+
+
+.table{
+     width: 80%;
+     left:8%;
+     top:450px;
+     background-color:whitesmoke;
+     color:black;
+     position:absolute;
+     z-index: 31;  
+    }
+
+    .header{
+        background-color: $buttonColor;
+        height:40px;
+        font-size: .8rem;
+        font-family:  sans-serif;
+        color:$white;
+        padding:0;
+        margin:0;
+     }
+     .head1{
+        width: 50px;
+   
+     }
+    .tbody{
+        padding:10px;
+        padding-left:30px;
+        align-content:space-between;
+    }
+     .rowIsSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:$buttonColor
+     }
+     .rowIsnotSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:red;
+     }
+
+}
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  .container{
+    position:fixed;
+    left: 8.1vw;
+    top: 0;
+    padding:0 5px;
+    background-color:$black;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    width: 91.9vw;
+    z-index: 30;
+    height:100vh;
+    font-size: 14px;
+    font-family:  sans-serif;
+}
+
+#email{
+    height: 30px;
+    width: 48%;
+    top:100px;
+    left:8%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+   }
+   #eError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:100px;
+    left:6%;
+    position:absolute;
+  }
+
+   #ticket{
+    top:140px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+    color:white;
+}
+
+#ticket::-webkit-input-placeholder {color:white;} /* Chrome/Opera/Safari */
+#ticket::-moz-placeholder { color: white;} /* Firefox 19+ */
+#ticket:-ms-input-placeholder { color: white;} /* IE 10+ */
+#ticket:-moz-placeholder {color: white;}  /* Firefox 18- */
+
+#nTicket{
+  top:140px;
+  left:8%;
+  width: 48%;
+  position:absolute;
+  font-size: 0.9rem;
+  font-family:  sans-serif;
+  border-radius: 5px;
+}
+#editor{
+    top:290px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+}
+
+
+#submit{
+    height: 40px;
+    width: 100px;
+    top:50px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+  #newTicket{
+    height: 40px;
+    width: 100px;
+    top:90px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+   #sendEmail{
+    height: 20px;
+    width: 20px;
+    top:180px;
+    left:55vw;
+    position:absolute;
+   }
+
+   #sendEmailLabel{
+    height: 30px;
+    width: 180px;
+    top:185px;
+    left:58vw;
+    position:absolute;
+    font-size: 1rem;
+    color:$white;
+  //  padding:2px 0;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+   }
+
+
+
+.table{
+     width: 80%;
+     left:8%;
+     top:450px;
+     background-color:whitesmoke;
+     color:black;
+     position:absolute;
+     z-index: 31;  
+    }
+
+    .header{
+        background-color: $buttonColor;
+        height:40px;
+        font-size: .8rem;
+        font-family:  sans-serif;
+        color:$white;
+        padding:0;
+        margin:0;
+     }
+     .head1{
+        width: 50px;
+   
+     }
+    .tbody{
+        padding:10px;
+        padding-left:30px;
+        align-content:space-between;
+    }
+     .rowIsSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:$buttonColor
+     }
+     .rowIsnotSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:red;
+     }
+
+}
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+
+  .container{
+    position:fixed;
+    left: 8.1vw;
+    top: 0;
+    padding:0 5px;
+    background-color:$black;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    width: 91.9vw;
+    z-index: 30;
+    height:100vh;
+    font-size: 14px;
+    font-family:  sans-serif;
+}
+
+#email{
+    height: 30px;
+    width: 48%;
+    top:100px;
+    left:8%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+   }
+   #eError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:100px;
+    left:6%;
+    position:absolute;
+  }
+
+   #ticket{
+    top:140px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+    color:white;
+}
+
+#ticket::-webkit-input-placeholder {color:white;} /* Chrome/Opera/Safari */
+#ticket::-moz-placeholder { color: white;} /* Firefox 19+ */
+#ticket:-ms-input-placeholder { color: white;} /* IE 10+ */
+#ticket:-moz-placeholder {color: white;}  /* Firefox 18- */
+
+#nTicket{
+  top:140px;
+  left:8%;
+  width: 48%;
+  position:absolute;
+  font-size: 0.9rem;
+  font-family:  sans-serif;
+  border-radius: 5px;
+}
+#editor{
+    top:290px;
+    left:8%;
+    width: 48%;
+    position:absolute;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+    border-radius: 5px;
+}
+
+
+#submit{
+    height: 40px;
+    width: 100px;
+    top:50px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+  #newTicket{
+    height: 40px;
+    width: 100px;
+    top:90px;
+    left:55vw;
+    position:absolute;
+    color:$backColor;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+  }
+   #sendEmail{
+    height: 20px;
+    width: 20px;
+    top:180px;
+    left:55vw;
+    position:absolute;
+   }
+
+   #sendEmailLabel{
+    height: 30px;
+    width: 180px;
+    top:185px;
+    left:58vw;
+    position:absolute;
+    font-size: 1rem;
+    color:$white;
+  //  padding:2px 0;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family:  sans-serif;
+   }
+
+
+
+.table{
+     width: 80%;
+     left:8%;
+     top:450px;
+     background-color:whitesmoke;
+     color:black;
+     position:absolute;
+     z-index: 31;  
+    }
+
+    .header{
+        background-color: $buttonColor;
+        height:40px;
+        font-size: .8rem;
+        font-family:  sans-serif;
+        color:$white;
+        padding:0;
+        margin:0;
+     }
+     .head1{
+        width: 50px;
+   
+     }
+    .tbody{
+        padding:10px;
+        padding-left:30px;
+        align-content:space-between;
+    }
+     .rowIsSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:$buttonColor
+     }
+     .rowIsnotSigned{
+        margin-Top:'10px';
+        padding:10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        color:red;
+     }
+
+}
+ 

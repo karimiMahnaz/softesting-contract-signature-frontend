@@ -11,19 +11,33 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+      //  use: ['babel-loader'],
+      use: {
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            ['@babel/plugin-transform-react-jsx', { throwIfNamespace: false }]
+          ]
+        }
+      }
       },
       {
         test: /\.svg$/,
         use: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              throwIfNamespace: false,
+            },
+          },
           {
             loader: 'svg-url-loader',
             options: {
               limit: 10000,
             },
             
-          },
-        ],
+         },
+       ],
       },
     ], 
   

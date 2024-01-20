@@ -16,7 +16,7 @@ import img from '../assets/abstract-blue.jpg'
 import eye from '../assets/Icon/eye.png';
 //import SignIn from '../pages/signIn';
 
-<title>SofTesting | ChangePassword</title>
+ // <title>SofTesting | ChangePassword</title>
 
 ///import http from '../services/httpService';
 

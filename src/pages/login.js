@@ -104,7 +104,7 @@ const Login = () => {
   const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
   const linkedinClientId = process.env.REACT_APP_LINKEDIN_CLIENT_ID;
   const linkedinRedirect = process.env.REACT_APP_LINKEDIN_RIDERECT;
-
+  
   let urlReCaptcha = "";
   let urlGoogle = "";
   let urlCookie = "";
@@ -204,9 +204,9 @@ const Login = () => {
       toast.success("google login is done.", { theme: "colored" });
   //    history.push("/");
       setFormsHide();
-    } catch (error) {
-      toast.info("google login failed");
-    }
+      } catch (error) {
+       toast.info("google login failed");
+      }
   };
 
   const handleResetPass = () => {
@@ -265,7 +265,7 @@ try{
         if (res_recaptcha.status === 200) {
           ///   toast.success("ReCaptcha is valid.", { theme: "colored" });
           setStatus("Login");
-        } else {
+       } else {
           setSuccess(false);
           setStatus("Login");
           toast.error(" ReCaptcha is not valid..", { theme: "dark" });
@@ -362,10 +362,17 @@ try{
   }
   };
 
+  const handleFrmLoad = () =>{
+    return setOffMenu;
+  }
+  
+  useEffect(() => {
+    handleFrmLoad();
+  }, []);
+
   return (
     <form
       className={styles.modal}
-      onLoad={setOffMenu}
       onSubmit={handleSubmit(onSubmit)}
       style={{ backgroundImage: `url(${img})` }}
     >
@@ -395,9 +402,7 @@ try{
           <input
             id={styles.inpassword}
             tabIndex="0"
-            className={`${
-              errors.password ? styles.errorBorder : styles.Border
-            }`}
+            className={`${errors.password ? styles.errorBorder : styles.Border }`}
             ref={passwordRef}
             defaultValue=""
             type={passwordShown ? "text" : "password"}

@@ -1,0 +1,1019 @@
+
+@import "./variables.module.scss";
+
+
+#emailAd:hover{color:$buttonColor;}
+
+.inactive{display:none;}
+.errorBorder{ border: 1px solid rgba(214, 9, 9, 0.8); }
+.Border{ border: 1px solid rgba(9, 228, 93, 0.8); }
+
+.fontLink {
+  font-family:  sans-serif;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .container{
+        position:fixed;
+        left: 8.1vw;
+        top: 0;
+        padding:0 5px;
+        background-color:$black;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        width: 91.9vw;
+        z-index: 30;
+        height:100vh;
+        font-size: 14px;
+        font-family:  sans-serif;
+    }
+    #submit{
+        height: 40px;
+        width: 100px;
+        top:50px;
+        left:50vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    
+      }
+
+    #selectProject{
+        height: 30px;
+        width: 48%;
+        top:100px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #projectName{
+        top:150px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #pError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:150px;
+        left:8%;
+        position:absolute;
+      }
+
+    #email{
+        height: 30px;
+        width: 48%;
+        top:190px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       }
+       #eError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:190px;
+        left:8%;
+        position:absolute;
+      }
+
+      #ownerName{
+        top:230px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #oError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:230px;
+        left:8%;
+        position:absolute;
+      }
+      #task{
+        top:300px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #tError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:300px;
+        left:8%;
+        position:absolute;
+      }
+     
+      #role{
+        top:340px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #rError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:340px;
+        left:8%;
+        position:absolute;
+      }
+
+      #taskStatus{
+        height: 30px;
+        width: 25%;
+        top:380px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    .dates{
+        position:absolute;
+        margin-top:460px;
+        margin-left: 10%;
+    .startLabel{
+        color:white;
+        margin-right: 2px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        }
+    .startDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+    .endLabel{
+        color:white;
+        margin-left: 10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    }
+    .endDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+   
+   }
+   #startError{
+    height: 50px;
+    width: 35px;
+    color:red;
+    top:460px;
+    position:absolute;
+    margin-left: 8%;
+  }
+
+   #endError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:460px;
+    position:absolute;
+    margin-left: 8%;
+  }
+
+    #file{
+        top:540px;
+        left:15%;
+        width: 48%;
+        height: 50px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #attachedFile{
+        top:570px;
+        left:15%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px; 
+        color:white;
+    }
+    
+       #sendEmail{
+        height: 20px;
+        width: 20px;
+        top:540px;
+        left:40%;
+        position:absolute;
+       }
+       #sendEmailLabel{
+        height: 30px;
+        width: 180px;
+        top:545px;
+        left:43%;
+        position:absolute;
+        font-size: 1rem;
+        color:$white;
+      //  padding:2px 0;
+        text-align: left;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+       }
+
+}
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+    .container{
+        position:fixed;
+        left: 8vw;
+        top: 0;
+        padding:0 5px;
+        background-color:$black;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        width: 91.9vw;
+        height: 50vw;
+        z-index: 30;
+        height:100vh;
+        font-size: 14px;
+        font-family:  sans-serif;
+    }
+
+    #selectProject{
+        height: 30px;
+        width: 48%;
+        top:100px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+    #projectName{
+        top:150px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #pError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:150px;
+        left:8%;
+        position:absolute;
+      }
+
+    #email{
+        height: 30px;
+        width: 48%;
+        top:190px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       }
+       #eError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:190px;
+        left:8%;
+        position:absolute;
+      }
+
+      #ownerName{
+        top:230px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #oError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:230px;
+        left:8%;
+        position:absolute;
+      }
+  
+   
+    #submit{
+        height: 40px;
+        width: 100px;
+        top:50px;
+        left:50vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    
+      }
+      #task{
+        top:300px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #tError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:300px;
+        left:8%;
+        position:absolute;
+      }
+     
+      #role{
+        top:340px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #rError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:340px;
+        left:8%;
+        position:absolute;
+      }
+
+      #taskStatus{
+        height: 30px;
+        width: 25%;
+        top:380px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    .dates{
+        position:absolute;
+        margin-top:460px;
+        margin-left: 10%;
+    .startLabel{
+        color:white;
+        margin-right: 2px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        }
+    .startDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+    .endLabel{
+        color:white;
+        margin-left: 10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    }
+    .endDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+   }
+   #startError{
+    height: 50px;
+    width: 35px;
+    color:red;
+    top:460px;
+    position:absolute;
+    margin-left: 8%;
+  }
+
+   #endError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:460px;
+    position:absolute;
+    margin-left: 8%;
+  }
+    #file{
+        top:540px;
+        left:15%;
+        width: 48%;
+        height: 50px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #attachedFile{
+        top:570px;
+        left:15%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px; 
+        color:white;
+    }
+
+       #sendEmail{
+        height: 20px;
+        width: 20px;
+        top:540px;
+        left:40%;
+        position:absolute;
+       }
+       #sendEmailLabel{
+        height: 30px;
+        width: 180px;
+        top:545px;
+        left:45%;
+        position:absolute;
+        font-size: 1rem;
+        color:$white;
+      //  padding:2px 0;
+        text-align: left;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+       }
+    
+}
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+    .container{
+        position:fixed;
+        left: 19.8vw;
+        top: 0;
+        padding:0 5px;
+        background-color:$black;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        width: 80vw;
+        z-index: 30;
+        height:100vh;
+        font-size: 14px;
+        font-family:  sans-serif;
+    }
+
+    #selectProject{
+        height: 30px;
+        width: 68%;
+        top:100px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+    #projectName{
+        top:150px;
+        left:10%;
+        width: 68%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #pError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:150px;
+        left:8%;
+        position:absolute;
+      }
+
+    #email{
+        height: 30px;
+        width: 68%;
+        top:190px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       }
+       #eError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:190px;
+        left:8%;
+        position:absolute;
+      }
+
+      #ownerName{
+        top:230px;
+        left:10%;
+        width: 68%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #oError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:230px;
+        left:8%;
+        position:absolute;
+      }
+
+    #file{
+        top:280px;
+        left:10%;
+        width: 68%;
+        height: 50px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+
+    }
+   
+    #attachedFile{
+        top:570px;
+        left:15%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px; 
+        color:white;
+    }
+
+    #submit{
+        height: 40px;
+        width: 100px;
+        top:50px;
+        left:50vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    
+      }
+     
+      #task{
+        top:300px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #tError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:300px;
+        left:8%;
+        position:absolute;
+      }
+     
+      #role{
+        top:340px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #rError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:340px;
+        left:8%;
+        position:absolute;
+      }
+
+      #taskStatus{
+        height: 30px;
+        width: 48%;
+        top:380px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    .dates{
+        position:absolute;
+        margin-top:460px;
+        margin-left: 10%;
+    .startLabel{
+        color:white;
+        margin-right: 2px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        }
+    .startDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+   
+    .endLabel{
+        color:white;
+        margin-left: 12px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    }
+    .endDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+   
+   }
+   #startError{
+    height: 50px;
+    width: 35px;
+    color:red;
+    margin-left: 1000px;
+    top:460px;
+    position:absolute;
+  }
+   #endError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:460px;
+    position:absolute;
+  }
+    #file{
+        top:540px;
+        left:15%;
+        width: 48%;
+        height: 50px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #attachedFile{
+        top:570px;
+        left:15%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px; 
+        color:white;
+    }
+       #sendEmail{
+        height: 20px;
+        width: 20px;
+        top:540px;
+        left:45%;
+        position:absolute;
+       }
+       #sendEmailLabel{
+        height: 30px;
+        width: 180px;
+        top:545px;
+        left:53%;
+        position:absolute;
+        font-size: 1rem;
+        color:$white;
+      //  padding:2px 0;
+        text-align: left;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+       }
+
+}
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+
+    .container{
+        position:fixed;
+        left: 20vw;
+        top: 0;
+        padding:0 5px;
+        background-color:$black;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        width: 80vw;
+        z-index: 30;
+        height:100vh;
+        font-size: 14px;
+        font-family:  sans-serif;
+    }
+
+    #selectProject{
+        height: 30px;
+        width: 78%;
+        top:100px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+    #projectName{
+        top:150px;
+        left:10%;
+        width: 78%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #pError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:150px;
+        left:8%;
+        position:absolute;
+      }
+
+    #email{
+        height: 30px;
+        width: 78%;
+        top:190px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       }
+       #eError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:190px;
+        left:8%;
+        position:absolute;
+      }
+
+      #ownerName{
+        top:230px;
+        left:10%;
+        width: 78%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #oError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:230px;
+        left:8%;
+        position:absolute;
+      }
+
+   
+   
+    #submit{
+        height: 40px;
+        width: 100px;
+        top:50px;
+        left:40vw;
+        position:absolute;
+        color:$backColor;
+        background-color: $buttonColor;
+        border-radius: 5px;
+        &:hover{color:red;}
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    
+      }
+      #task{
+        top:300px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #tError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:300px;
+        left:8%;
+        position:absolute;
+      }
+     
+      #role{
+        top:340px;
+        left:10%;
+        width: 48%;
+        height: 30px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+       // color:white;
+    }
+
+    #rError{
+        height: 20px;
+        width: 5px;
+        color:red;
+        top:340px;
+        left:8%;
+        position:absolute;
+      }
+
+      #taskStatus{
+        height: 30px;
+        width: 48%;
+        top:380px;
+        left:10%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    .dates{
+        position:absolute;
+        margin-top:460px;
+        margin-left: 10%;
+    .startLabel{
+        color:white;
+        margin-right: 2px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        }
+    .startDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+    .endLabel{
+        color:white;
+        margin-left: 10px;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+    }
+    .endDate{
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+        height: 30px;
+    }
+   }
+
+   #startError{
+    height: 50px;
+    width: 35px;
+    color:red;
+    top:460px;
+    position:absolute;
+    left: 8%;
+  }
+
+   #endError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:460px;
+    position:absolute;
+    left: 8%;
+  }
+
+
+    #file{
+        top:540px;
+        left:15%;
+        width: 48%;
+        height: 50px;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px;
+    }
+
+    #attachedFile{
+        top:570px;
+        left:15%;
+        position:absolute;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+        border-radius: 5px; 
+        color:white;
+    }
+       #sendEmail{
+        height: 20px;
+        width: 20px;
+        top:540px;
+        left:52%;
+        position:absolute;
+       }
+       #sendEmailLabel{
+        height: 30px;
+        width: 180px;
+        top:545px;
+        left:60%;
+        position:absolute;
+        font-size: 1rem;
+        color:$white;
+      //  padding:2px 0;
+        text-align: left;
+        font-size: 0.9rem;
+        font-family:  sans-serif;
+       }
+}

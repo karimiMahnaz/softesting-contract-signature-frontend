@@ -3,7 +3,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import '../styles/slideShow.scss';
 import { VisibilityContext } from '../contexts/visibilityContext';
 
-export default function SlideShow({images=[], interval=5000}){
+export default function SlideShow({images=[], interval=8000}){
     const [thumbnails, setThumnails] = useState([]);
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -65,8 +65,8 @@ export default function SlideShow({images=[], interval=5000}){
 
 
     const [dimensions, setDimensions] = React.useState({
-        height: window.innerHeight,
-        width: window.innerWidth
+        height: window.innerHeight -100,
+        width: window.innerWidth -100
       });
     
       function debounce(fn, ms) {
@@ -83,8 +83,8 @@ export default function SlideShow({images=[], interval=5000}){
       useEffect(() => {
         const debouncedHandleResize = debounce(function handleResize() {
           setDimensions({
-            height: window.innerHeight,
-            width: window.innerWidth
+            height: window.innerHeight -100,
+            width: window.innerWidth -100
           })
         }, 1000)
     
@@ -95,7 +95,7 @@ export default function SlideShow({images=[], interval=5000}){
     
         }
       })
-
+console.log('dimensions.height', dimensions.height)
     return (
         <section className="slideshow" style={{ width: `${dimensions.width}px`, height: `${dimensions.height}px` }}>
             <div className="slide-holder">

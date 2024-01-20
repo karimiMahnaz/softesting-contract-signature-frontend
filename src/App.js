@@ -16,6 +16,9 @@ import DocumentSign from "./pages/documentSign";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import ResetPass from "./pages/resetPass";
+import Tasks from "./pages/tasks";
+import Ticket from "./pages/tickets";
+
 //import Footer from './components/footer';
 import Policy from "./pages/policy";
 import AboutUs from "./pages/aboutUs";
@@ -37,7 +40,7 @@ import DevelopArticle5 from "./blog/developArticle5";
 import DevelopArticle6 from "./blog/developArticle6";
 import Search from "./components/search";
 import NotFound from "./pages/notFound";
-
+import Downloads from "./pages/downloads";
 
 import AuthContextProvider from "./contexts/authContext";
 import ThemeContextProvider from "./contexts/themeContext";
@@ -106,6 +109,16 @@ function App() {
                         <Contract />
                       </Route>
                      
+                      <Route path="/src/pages/tasks">
+                        <Body />
+                        <Tasks />
+                      </Route>
+
+                      <Route path="/src/pages/tickets">
+                        <Body />
+                        <Ticket />
+                      </Route>
+                  
                       <Route path="/signin">
                         <Body />
                         <SignIn/>
@@ -217,9 +230,14 @@ function App() {
                         <DevelopArticle6 />
                       </Route>
                       <Route path="/src/components/search" exact>
-                        <Search />
+                         <Search />
                       </Route>
+                      <Route path = "/downloads" exact>
+                        <Downloads/>
+                      </Route>
+
                       <Route component={NotFound} exact></Route>
+                    
                     </Switch>
                   </main>
                 </BrowserRouter>

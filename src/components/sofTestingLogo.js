@@ -1,3 +1,4 @@
+import React from "react";
 import styles from '../styles/sofTestingLogo.module.scss';
 
 const SofTestingLogo = () => {

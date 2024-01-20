@@ -159,17 +159,17 @@ const ContactUs = (props = "") => {
         key = "";
 
       let url = "";
-      if (location === "localhost") {
-        url = `http://${location}:8000/api/email`;
+      // if (location === "localhost") {
+      //   url = `http://${location}:8000/api/email`;
 
-        if (selectedFiles.length > 1) {
-          url_file = `http://${location}:8000/api/file/multi`;
-          key = "myFiles";
-        } else {
-          url_file = `http://${location}:8000/api/file`;
-          key = "myFile";
-        }
-      } else {
+      //   if (selectedFiles.length > 1) {
+      //     url_file = `http://${location}:8000/api/file/multi`;
+      //     key = "myFiles";
+      //   } else {
+      //     url_file = `http://${location}:8000/api/file`;
+      //     key = "myFile";
+      //   }
+      // } else {
         url = `https://api.softestingca.com/api/email`;
 
         if (selectedFiles.length > 1) {
@@ -179,7 +179,7 @@ const ContactUs = (props = "") => {
           url_file = "https://api.softestingca.com/api/file";
           key = "myFile";
         }
-      }
+   //   }
 
       // if (selectedFiles.length > 1) {
       //     url_file = `http://${location}:8000/api/file/multi`
@@ -197,6 +197,8 @@ const ContactUs = (props = "") => {
       if (selectedFiles.length > 0) {
         //data.customerMail
         //'photos'
+        console.log("selectedFiles", selectedFiles)
+        console.log('formData', formData)
         console.log(data.customerMail.replace(" ", ""));
         axios({
           method: "post",
@@ -916,7 +918,7 @@ const ContactUs = (props = "") => {
             <input
               placeholder="Enter phone Number(with country code)"
               id={styles.phone}
-              I
+              
               className={`${errors.phone ? styles.errorBorder : styles.Border}`}
               defaultValue=""
               type="phone"
@@ -1087,7 +1089,7 @@ const ContactUs = (props = "") => {
             <input
               placeholder="Enter phone Number(with country code)"
               id={styles.phone}
-              I
+              
               className={`${errors.phone ? styles.errorBorder : styles.Border}`}
               defaultValue=""
               type="phone"
@@ -1259,7 +1261,7 @@ const ContactUs = (props = "") => {
             <input
               placeholder="Enter phone Number(with country code)"
               id={styles.phone}
-              I
+              
               className={`${errors.phone ? styles.errorBorder : styles.Border}`}
               defaultValue=""
               type="phone"
@@ -1428,7 +1430,7 @@ const ContactUs = (props = "") => {
             <input
               placeholder="Enter phone Number(with country code)"
               id={styles.phone}
-              I
+              
               className={`${errors.phone ? styles.errorBorder : styles.Border}`}
               defaultValue=""
               type="phone"

@@ -189,6 +189,31 @@ $white:white;
     }
     }
 
+    .tickets{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        align-items: left;
+        font-size: .9rem;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+    
+        .ticketsIcon{
+            width: 26px;
+            height:26px;
+            margin:auto;
+            margin-top:15px;
+         //   background-color: $white;
+        //    border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+        }
 
 .App{
     background-color: $black;
@@ -408,7 +433,32 @@ $white:white;
             color:$buttonColor;
         }
         }
-    
+
+        .tickets{
+            background-color: $black;
+            color:$white;
+            border: none;
+            margin-top:10px;
+            align-items: left;
+            font-size: .9rem;
+          
+            &:hover{
+                color:$buttonColor;
+            }
+        }
+        
+            .ticketsIcon{
+                width: 23px;
+                height:23px;
+                margin:auto;
+                margin-top:15px;
+             //   background-color: $white;
+            //    border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+            }
     
     .App{
         background-color: $black;
@@ -619,7 +669,31 @@ $white:white;
         }
         }
     
+     .tickets{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        align-items: left;
+        font-size: .7rem;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
     
+        .ticketsIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+         //   background-color: $white;
+        //    border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+        }
     
 
     .App{
@@ -812,7 +886,7 @@ $white:white;
         color:$white;
         border: none;
         margin:auto;
-        font-size: .9rem;
+        font-size: .7rem;
         margin-top: 2px;
        
         &:hover{
@@ -832,6 +906,32 @@ $white:white;
         }
         }
    
+        .tickets{
+            background-color: $black;
+            color:$white;
+            border: none;
+            margin-top:10px;
+            align-items: left;
+            font-size: .7rem;
+          
+            &:hover{
+                color:$buttonColor;
+            }
+        }
+        
+            .ticketsIcon{
+                width: 20px;
+                height:20px;
+                margin:auto;
+                margin-top:15px;
+             //   background-color: $white;
+            //    border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+            }
+            
     .App{
         background-color: $black;
         color:$white;

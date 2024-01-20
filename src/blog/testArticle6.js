@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import styles from '../styles/testArticle6.module.scss';
 
 import { NavContext } from '../contexts/navContext';
@@ -30,10 +30,13 @@ const TestArticle6 = (props) => {
         setBlogShow();
     }
 
+    useEffect(() => {
+        handleFrmLoad();
+      }, []);
 
     return (
 
-        <div className={styles.article} onLoad={handleFrmLoad} >
+        <div className={styles.article}  >
 
             <div className={styles.img} style={{ backgroundImage: `url(${img})` }}>
 

@@ -15,17 +15,18 @@ import profileIcon from "../assets/dashboard/profile_icon.png";
 import tasksIcon from "../assets/dashboard/tasks_icon.png";
 import downLoadAppIcon from "../assets/dashboard/download.png";
 import contractIcon from "../assets/dashboard/contract.png";
-
+import ticketIcon from "../assets/dashboard/support_ticket.png"
 
 const Dashboard = () => {
  
    const [profile, setProfile] = useState(false);
    const [tasks, setTasks] = useState(false);
+   const [tickets, setTickets] = useState(false);
    const [contract, setContract] =useState(false);
    const [show, setShow] = useState(true);
    const [minimize, setMinimize] = useState(false);
 
-   const {  setProfileFrmShow, setContractFrmShow, setFormsHide } = useContext(VisibilityContext);
+   const {  setProfileFrmShow, setContractFrmShow, setFormsHide, setTasksFrmShow, setTicketsFrmShow } = useContext(VisibilityContext);
    const { states, dispatch } = useContext(AuthContext);
 
   // let { path, url } = useRouteMatch();
@@ -84,6 +85,7 @@ if (appElement1.current){
       setFormsHide();
       setProfile(false);
       setTasks(false);
+      setTickets(false);
    }
 
    const handleLogout = () =>{
@@ -95,6 +97,7 @@ if (appElement1.current){
        setFormsHide();
        setProfile(false);
        setTasks(false);
+       setTickets(false);
       history.push("/");  
 
    }
@@ -106,8 +109,14 @@ if (appElement1.current){
       setMinimize(true);
    }
    const handleTasks = () => {
-      history.push("/Tasks");
+      history.push("/src/pages/tasks");
+      setTasksFrmShow();
       setTasks(true);
+   }
+   const handleTickets = () =>{
+      history.push("/src/pages/tickets");
+      setTicketsFrmShow();
+      setTickets(true);
    }
    const handleContract = () =>{
       history.push("/src/pages/contract");
@@ -161,6 +170,11 @@ if (appElement1.current){
          <img className={styles.tasksIcon} src={tasksIcon} alt="tasks"  onClick={handleTasks}/>
          <button className={styles.tasks} onClick={handleTasks}>
             Tasks
+         </button>
+
+         <img className={styles.ticketsIcon} src={ticketIcon} alt="tickets"  onClick={handleTickets}/>
+         <button className={styles.tickets} onClick={handleTickets}>
+            Tickets
          </button>
 
          <img className={styles.AppIcon} src={downLoadAppIcon} alt="download" onClick={handleApp}/>

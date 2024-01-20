@@ -1,0 +1,14 @@
+{
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx", {
+          "throwIfNamespace": false
+        }
+      ]
+    ],
+    
+        "presets": ["@babel/preset-react"]
+      
+      
+  }
+  
